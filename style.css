@@ -1,8 +1,14 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background: #0b0f0b;
     color: #f5f5f5;
+    line-height: 1.6;
 }
 
 .container {
@@ -11,9 +17,11 @@ body {
     padding: 0 16px;
 }
 
+/* HEADER */
 header {
     background: #00c853;
     padding: 16px 0;
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
 }
 
 .header-flex {
@@ -25,64 +33,87 @@ header {
 .logo {
     font-size: 22px;
     font-weight: bold;
+    color: #041006;
 }
 
 .selo-header {
     width: 70px;
+    height: 70px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
+/* HERO */
 .hero {
     background: #091608;
-    padding: 40px 0 60px;
+    padding: 60px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    grid-template-columns: 1.3fr 1fr;
     gap: 40px;
     align-items: center;
 }
 
 .hero-text h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin: 16px 0;
+    color: #ffffff;
+    line-height: 1.2;
 }
 
 .badge {
     background: #00c853;
+    color: #041006;
     display: inline-block;
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 999px;
     font-size: 13px;
     font-weight: bold;
+    margin-bottom: 12px;
 }
 
 .subtitle {
-    color: #e0e0e0;
-    margin-bottom: 16px;
+    color: #d0d0d0;
+    margin: 12px 0 20px 0;
+    font-size: 16px;
+}
+
+.hero-beneficios {
+    margin: 20px 0 24px 0;
 }
 
 .hero-beneficios p {
-    margin: 4px 0;
+    margin: 8px 0;
     color: #c8facc;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .hero-img img {
     width: 100%;
+    max-width: 450px;
     border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    box-shadow: 0 12px 40px rgba(0, 200, 83, 0.3);
 }
 
+/* BOTÕES */
 .btn {
-    padding: 12px 20px;
+    padding: 14px 28px;
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
-    margin-right: 8px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-right: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -90,77 +121,156 @@ header {
     color: #041006;
 }
 
+.btn-primary:hover {
+    background: #00b347;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 200, 83, 0.5);
+}
+
 .btn-secondary {
     background: transparent;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 2px solid #00c853;
 }
 
+.btn-secondary:hover {
+    background: #00c853;
+    color: #041006;
+}
+
+.btn-large {
+    font-size: 17px;
+    padding: 16px 36px;
+}
+
+/* MODELOS */
 .modelos {
-    padding: 40px 0;
+    padding: 60px 0;
     background: #050905;
 }
 
 .modelos h2 {
     text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #ffffff;
 }
 
 .section-subtitle {
     text-align: center;
-    margin-bottom: 20px;
-    color: #cfcfcf;
+    margin-bottom: 40px;
+    color: #b0b0b0;
+    font-size: 16px;
 }
 
 .modelo-flex {
     display: grid;
-    grid-template-columns: minmax(0,1.1fr) minmax(0,1fr);
-    gap: 32px;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
     align-items: center;
+}
+
+.modelo-descricao h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #00c853;
+}
+
+.modelo-descricao p {
+    color: #d0d0d0;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.modelo-descricao ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 24px 0;
+}
+
+.modelo-descricao li {
+    margin: 10px 0;
+    color: #c8facc;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .modelo-img img {
     width: 100%;
+    max-width: 400px;
     border-radius: 16px;
-    box-shadow: 0 10px 32px rgba(0,0,0,0.6);
+    box-shadow: 0 10px 32px rgba(0, 200, 83, 0.2);
 }
 
-.modelo-descricao ul {
-    padding-left: 18px;
-}
-
+/* OFERTA */
 .oferta {
     background: #00c853;
-    color: #021003;
+    color: #041006;
     text-align: center;
-    padding: 40px 16px;
+    padding: 50px 16px;
 }
 
 .oferta-box h2 {
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
-.btn-large {
-    font-size: 16px;
-    padding: 14px 26px;
-    margin-top: 14px;
+.oferta-box p {
+    font-size: 18px;
+    margin-bottom: 24px;
 }
 
+/* FOOTER */
 footer {
     background: #020402;
-    color: #bbbbbb;
+    color: #888888;
     text-align: center;
-    padding: 24px 16px;
+    padding: 32px 16px;
+    border-top: 1px solid #1a1a1a;
 }
 
 .selo-footer {
     width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
 }
 
+footer p {
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
 @media (max-width: 768px) {
     .hero-grid,
     .modelo-flex {
         grid-template-columns: 1fr;
     }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .modelos h2 {
+        font-size: 24px;
+    }
+
+    .hero-img img,
+    .modelo-img img {
+        max-width: 100%;
+    }
 }
+
