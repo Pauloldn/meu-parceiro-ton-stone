@@ -1,272 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU PARCEIRO TON STONE</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #0b0f0b;
-    color: #f5f5f5;
-    line-height: 1.6;
-}
+<body>
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
+<header>
+    <div class="container header-flex">
+        <h1 class="logo">MEU PARCEIRO TON STONE</h1>
+        <img src="selo-parceiro-ton.jpg" class="selo-header" alt="Parceiro Autorizado Ton">
+    </div>
+</header>
 
-/* HEADER */
-header {
-    background: #00c853;
-    padding: 16px 0;
-    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
-}
+<section class="hero">
+    <div class="container hero-grid">
 
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        <div class="hero-text">
+            <span class="badge">🔒 Parceiro Autorizado Ton</span>
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #041006;
-}
+            <h2>Máquinas Ton com até <strong>73% OFF</strong></h2>
 
-.selo-header {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+            <p class="subtitle">
+                Taxas a partir de <b>0,74%</b>, sem aluguel, garantia vitalícia
+                e frete grátis para todo o Brasil.
+            </p>
 
-/* HERO */
-.hero {
-    background: #091608;
-    padding: 60px 0;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-}
+            <div class="hero-beneficios">
+                <p>✔ Frete grátis para todo o Brasil</p>
+                <p>✔ Menor taxa do mercado</p>
+                <p>✔ Recarga de bobina grátis</p>
+                <p>✔ Garantia vitalícia</p>
+            </div>
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
+            <a href="https://ton.com.br/catalogo/?referrer=65A8E92E-BDD9-4762-909D-58F9B2085B79&userAnticipation=0&utm_medium=invite_share&utm_source=revendedor"
+               class="btn btn-primary" target="_blank">Garantir agora com 73% OFF</a>
 
-.hero-text h2 {
-    font-size: 36px;
-    margin: 16px 0;
-    color: #ffffff;
-    line-height: 1.2;
-}
+            <a href="https://wa.me/5543984115645?text=Olá!%20Quero%20uma%20máquina%20Ton"
+               class="btn btn-secondary" target="_blank">Tirar dúvida no WhatsApp</a>
+        </div>
 
-.badge {
-    background: #00c853;
-    color: #041006;
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
+        <div class="hero-img">
+            <img src="ton-maquina-beneficios.jpg" alt="Máquina Ton com Benefícios">
+        </div>
 
-.subtitle {
-    color: #d0d0d0;
-    margin: 12px 0 20px 0;
-    font-size: 16px;
-}
+    </div>
+</section>
 
-.hero-beneficios {
-    margin: 20px 0;
-}
+<section class="modelos">
+    <div class="container">
+        <h2>Máquina Premium Ton</h2>
+        <p class="section-subtitle">Tecnologia rápida e moderna para o seu negócio</p>
 
-.hero-beneficios p {
-    margin: 8px 0;
-    color: #c8facc;
-    font-size: 15px;
-    font-weight: 500;
-}
+        <div class="modelo-flex">
 
-.hero-img img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0, 200, 83, 0.3);
-}
+            <div class="modelo-descricao">
+                <h3>Ton Smart</h3>
+                <p>Máquina premium com tela grande, leitura rápida e suporte completo.</p>
 
-/* BOTÕES */
-.btn {
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+                <ul>
+                    <li>✔ Aceita Pix, crédito e débito</li>
+                    <li>✔ QR Code integrado</li>
+                    <li>✔ Bobina grátis</li>
+                    <li>✔ Estável e rápida</li>
+                </ul>
 
-.btn-primary {
-    background: #00c853;
-    color: #041006;
-}
+                <a href="https://ton.com.br/catalogo/?referrer=65A8E92E-BDD9-4762-909D-58F9B2085B79&userAnticipation=0&utm_medium=invite_share&utm_source=revendedor"
+                   class="btn btn-primary" target="_blank">Quero a Ton Smart</a>
+            </div>
 
-.btn-primary:hover {
-    background: #00b347;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 200, 83, 0.4);
-}
+            <div class="modelo-img">
+                <img src="ton-maquina-qrcode.jpg" alt="Máquina Ton QR Code">
+            </div>
+        </div>
+    </div>
+</section>
 
-.btn-secondary {
-    background: transparent;
-    color: #ffffff;
-    border: 2px solid #00c853;
-}
+<section class="oferta">
+    <div class="container oferta-box">
+        <h2>💥 Oferta Especial para Parceiros</h2>
+        <p>Apenas hoje: até <strong>73% de desconto</strong> na adesão.</p>
 
-.btn-secondary:hover {
-    background: #00c853;
-    color: #041006;
-}
+        <a href="https://ton.com.br/catalogo/?referrer=65A8E92E-BDD9-4762-909D-58F9B2085B79&userAnticipation=0&utm_medium=invite_share&utm_source=revendedor"
+           class="btn btn-primary btn-large" target="_blank">Quero garantir agora</a>
+    </div>
+</section>
 
-.btn-large {
-    font-size: 16px;
-    padding: 14px 32px;
-}
+<footer>
+    <img src="selo-parceiro-ton.jpg" class="selo-footer" alt="Parceiro Autorizado Ton">
+    <p>© 2025 – MEU PARCEIRO TON STONE</p>
+</footer>
 
-/* MODELOS */
-.modelos {
-    padding: 60px 0;
-    background: #050905;
-}
+</body>
+</html>
 
-.modelos h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 8px;
-}
-
-.section-subtitle {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #b0b0b0;
-    font-size: 16px;
-}
-
-.modelo-flex {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.modelo-descricao h3 {
-    font-size: 28px;
-    margin-bottom: 12px;
-    color: #00c853;
-}
-
-.modelo-descricao p {
-    color: #d0d0d0;
-    margin-bottom: 16px;
-}
-
-.modelo-descricao ul {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0;
-}
-
-.modelo-descricao li {
-    margin: 10px 0;
-    color: #c8facc;
-    font-weight: 500;
-}
-
-.modelo-img img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 16px;
-    box-shadow: 0 10px 32px rgba(0, 200, 83, 0.2);
-}
-
-/* OFERTA */
-.oferta {
-    background: #00c853;
-    color: #041006;
-    text-align: center;
-    padding: 50px 16px;
-}
-
-.oferta-box h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-
-.oferta-box p {
-    font-size: 18px;
-    margin-bottom: 24px;
-}
-
-/* FOOTER */
-footer {
-    background: #020402;
-    color: #888888;
-    text-align: center;
-    padding: 32px 16px;
-    border-top: 1px solid #1a1a1a;
-}
-
-.selo-footer {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 12px;
-    object-fit: cover;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .hero-grid,
-    .modelo-flex {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text h2 {
-        font-size: 28px;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .modelos h2 {
-        font-size: 24px;
-    }
-
-    .hero-img img,
-    .modelo-img img {
-        max-width: 100%;
-    }
-}
 
 
